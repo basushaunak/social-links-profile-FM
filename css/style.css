@@ -1,0 +1,100 @@
+/* CSS Stylesheet for Social Links Profile Challenge from Front End Mentor 
+## Colors
+
+- Green: hsl(75, 94%, 57%)
+
+- White: hsl(0, 0%, 100%)
+
+- Grey 700: hsl(0, 0%, 20%)
+- Grey 800: hsl(0, 0%, 12%)
+- Grey 900: hsl(0, 0%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 600, 700
+
+*/
+
+@font-face {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 400 600 700;
+	font-stretch: 100%;
+	src: local("Inter Regular"), local("Inter-Regular"), url(../assets/fonts/inter.woff2) format("woff2"), url(../assets/fonts/inter.woff) format("woff");
+	font-display: auto;
+}
+
+
+*, *::before, *::after{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-400: hsl(0, 0%, 30%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+    --font-family: "Inter",sans-serif;
+}
+
+html{
+    font-size: 14px;
+    color: var(--white);
+}
+
+.wrapper{
+    background-color: var(--grey-900);
+    width: clamp(350px, 50%, 600px);
+    margin-inline: auto;
+}
+
+.user-card{
+    background-color: var(--grey-400);
+    width: 80%;
+    max-width: fit-content;
+    margin-inline: auto;
+
+}
+
+#links{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    padding-block: 1em;
+}
+
+.button{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5em 2em;
+}
+.button:hover{
+    background-color: var(--green);
+    color: var(--grey-900);
+    cursor: pointer;
+}
+
+
+#avatar-div{
+    background-color: var(--green);
+    border-radius: 50%;
+}
+
+#avatar{
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-inline: auto;
+}
