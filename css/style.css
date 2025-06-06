@@ -53,14 +53,32 @@ html{
     color: var(--white);
 }
 
+h1{
+    text-align: center;
+    line-height: 1.2em;
+    padding-block-start: 0.5em;
+}
+
+p{
+    text-align: center;
+}
+
+#location{
+    color: var(--green);
+    font-weight: 700;
+    line-height: 1.5em;
+    padding-block: 0.5em;
+}
+
 .wrapper{
     background-color: var(--grey-900);
-    width: clamp(350px, 50%, 600px);
+    width: clamp(350px, 50%, 500px);
     margin-inline: auto;
+    max-width: fit-content;
 }
 
 .user-card{
-    background-color: var(--grey-400);
+    background-color: var(--grey-800);
     width: 80%;
     max-width: fit-content;
     margin-inline: auto;
@@ -79,6 +97,7 @@ html{
     text-align: center;
     font-size: 1.5rem;
     padding: 0.5em 2em;
+    border-radius: 10px;
 }
 .button:hover{
     background-color: var(--green);
@@ -86,15 +105,27 @@ html{
     cursor: pointer;
 }
 
-
+/* 
 #avatar-div{
     background-color: var(--green);
     border-radius: 50%;
-}
+} */
 
 #avatar{
     object-fit: cover;
     border-radius: 50%;
     display: block;
     margin-inline: auto;
+}
+
+.attribution{
+    padding-block-end: 2em;
+    padding-inline: 2em;
+}
+.attribution  a{
+    text-decoration: none;
+    color: var(--white);
+}
+.attribution a:hover{
+    color: var(--green);
 }
