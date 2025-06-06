@@ -75,6 +75,7 @@ p{
     width: clamp(350px, 50%, 500px);
     margin-inline: auto;
     max-width: fit-content;
+    margin-block-start: 2rem;
 }
 
 .user-card{
@@ -82,6 +83,7 @@ p{
     width: 80%;
     max-width: fit-content;
     margin-inline: auto;
+    padding-block-start: 2rem;
 
 }
 
